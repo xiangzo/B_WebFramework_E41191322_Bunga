@@ -17,3 +17,7 @@ Route::resource('user','ManagementUserController');
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::get('/klik', function () {
+    return view('klik');
+});

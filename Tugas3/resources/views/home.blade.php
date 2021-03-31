@@ -13,5 +13,6 @@
             <li>{{ $p }}</li>
             @endforeach
         </ul>
+        <a href="klik">klik</a>
     </div>
 @endsection 
