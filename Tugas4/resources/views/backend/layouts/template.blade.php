@@ -7,33 +7,33 @@
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  <link rel="shortcut icon" href="{{ asset('img/favicon.png')}}">
+  <link rel="shortcut icon" href="img/favicon.png">
 
-  <title>{{config('app.name')}}</title>
+  <title>{{ config('app.name')}}</title>
 
   <!-- Bootstrap CSS -->
-  <link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet">
   <!-- bootstrap theme -->
-  <link href="{{ asset('css/bootstrap-theme.css')}}" rel="stylesheet">
+  <link href="{{ asset('backend/css/bootstrap-theme.css') }}" rel="stylesheet">
   <!--external css-->
   <!-- font icon -->
-  <link href="{{ asset('css/elegant-icons-style.css')}}" rel="stylesheet" />
-  <link href="{{ asset('css/font-awesome.min.css')}}" rel="stylesheet" />
+  <link href="{{ asset('backend/css/elegant-icons-style.css') }}" rel="stylesheet" />
+  <link href="{{ asset('backend/css/font-awesome.min.css') }}" rel="stylesheet" />
   <!-- full calendar css-->
-  <link href="{{ asset('assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css')}}" rel="stylesheet" />
-  <link href="{{ asset('assets/fullcalendar/fullcalendar/fullcalendar.css')}}" rel="stylesheet" />
+  <link href="{{ asset('backend/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css') }}" rel="stylesheet" />
+  <link href="{{ asset('backend/assets/fullcalendar/fullcalendar/fullcalendar.css') }}" rel="stylesheet" />
   <!-- easy pie chart-->
-  <link href="{{ asset('assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css')}}" rel="stylesheet" type="text/css" media="screen" />
+  <link href="{{ asset('backend/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css') }}" rel="stylesheet" type="text/css" media="screen" />
   <!-- owl carousel -->
-  <link rel="stylesheet" href="{{ asset('css/owl.carousel.css')}}" type="text/css">
-  <link href="{{ asset('css/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ asset('backend/css/owl.carousel.css') }}" type="text/css">
+  <link href="{{ asset('backend/css/jquery-jvectormap-1.2.2.css') }}" rel="stylesheet">
   <!-- Custom styles -->
-  <link rel="stylesheet" href="{{ asset('css/fullcalendar.css')}}">
-  <link href="{{ asset('css/widgets.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/style.css')}}" rel="stylesheet">
-  <link href="{{ asset('css/style-responsive.css')}}" rel="stylesheet" />
-  <link href="{{ asset('css/xcharts.min.css')}}" rel=" stylesheet">
-  <link href="{{ asset('css/jquery-ui-1.10.4.min.css')}}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ asset('backend/css/fullcalendar.css') }}">
+  <link href="{{ asset('backend/css/widgets.css')}}" rel="stylesheet">
+  <link href="{{ asset('backend/css/style.css')}}" rel="stylesheet">
+  <link href="{{ asset('backend/css/style-responsive.css')}}" rel="stylesheet" />
+  <link href="{{ asset('backend/css/xcharts.min.css')}}" rel=" stylesheet">
+  <link href="{{ asset('backend/css/jquery-ui-1.10.4.min.css')}}" rel="stylesheet">
   <!-- =======================================================
     Theme Name: NiceAdmin
     Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -309,53 +309,53 @@
     </header>
     <!--header end-->
 
-  @include('backend/layouts.sidebar')
+    @include('backend/layouts.sidebar')
 
-  @yield('content')
+    @yield('content')
   </section>
   <!-- container section start -->
 
   <!-- javascripts -->
-  <script src="{{ asset('js/jquery.js')}}"></script>
-  <script src="{{ asset('js/jquery-ui-1.10.4.min.js')}}"></script>
-  <script src="{{ asset('js/jquery-1.8.3.min.js')}}"></script>
-  <script type="text/javascript" src="{{ asset('js/jquery-ui-1.9.2.custom.min.js')}}"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui-1.10.4.min.js"></script>
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
   <!-- bootstrap -->
-  <script src="{{ asset('js/bootstrap.min.js')}}"></script>
+  <script src="js/bootstrap.min.js"></script>
   <!-- nice scroll -->
-  <script src="{{ asset('js/jquery.scrollTo.min.js')}}"></script>
-  <script src="{{ asset('js/jquery.nicescroll.js')}}" type="text/javascript"></script>
+  <script src="js/jquery.scrollTo.min.js"></script>
+  <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
   <!-- charts scripts -->
-  <script src="{{ asset('assets/jquery-knob/js/jquery.knob.js')}}"></script>
-  <script src="{{ asset('js/jquery.sparkline.js')}}" type="text/javascript"></script>
-  <script src="{{ asset('assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js')}}"></script>
-  <script src="{{ asset('js/owl.carousel.js')}}"></script>
+  <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+  <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+  <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+  <script src="js/owl.carousel.js"></script>
   <!-- jQuery full calendar -->
-  <<script src="{{ asset('js/fullcalendar.min.js')}}"></script>
+  <<script src="js/fullcalendar.min.js"></script>
     <!-- Full Google Calendar - Calendar -->
-    <script src="{{ asset('assets/fullcalendar/fullcalendar/fullcalendar.js')}}"></script>
+    <script src="assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
     <!--script for this page only-->
-    <script src="{{ asset('js/calendar-custom.js')}}"></script>
-    <script src="{{ asset('js/jquery.rateit.min.js')}}"></script>
+    <script src="js/calendar-custom.js"></script>
+    <script src="js/jquery.rateit.min.js"></script>
     <!-- custom select -->
-    <script src="{{ asset('js/jquery.customSelect.min.js')}}"></script>
-    <script src="{{ asset('assets/chart-master/Chart.js')}}"></script>
+    <script src="js/jquery.customSelect.min.js"></script>
+    <script src="assets/chart-master/Chart.js"></script>
 
     <!--custome script for all page-->
-    <script src="{{ asset('js/scripts.js')}}"></script>
+    <script src="js/scripts.js"></script>
     <!-- custom script for this page-->
-    <script src="{{ asset('js/sparkline-chart.js')}}"></script>
-    <script src="{{ asset('js/easy-pie-chart.js')}}"></script>
-    <script src="{{ asset('js/jquery-jvectormap-1.2.2.min.js')}}"></script>
-    <script src="{{ asset('js/jquery-jvectormap-world-mill-en.js')}}"></script>
-    <script src="{{ asset('js/xcharts.min.js')}}"></script>
-    <script src="{{ asset('js/jquery.autosize.min.js')}}"></script>
-    <script src="{{ asset('js/jquery.placeholder.min.js')}}"></script>
-    <script src="{{ asset('js/gdp-data.js')}}"></script>
-    <script src="{{ asset('js/morris.min.js')}}"></script>
-    <script src="{{ asset('js/sparklines.js')}}"></script>
-    <script src="{{ asset('js/charts.js')}}"></script>
-    <script src="{{ asset('js/jquery.slimscroll.min.js')}}"></script>
+    <script src="js/sparkline-chart.js"></script>
+    <script src="js/easy-pie-chart.js"></script>
+    <script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="js/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="js/xcharts.min.js"></script>
+    <script src="js/jquery.autosize.min.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="js/gdp-data.js"></script>
+    <script src="js/morris.min.js"></script>
+    <script src="js/sparklines.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
     <script>
       //knob
       $(function() {
